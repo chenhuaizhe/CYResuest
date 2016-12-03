@@ -127,11 +127,11 @@ CYLogUploadResponce *res =  (CYLogUploadResponce *)responseObject;
 
 [GitHub - chenhuaizhe/CYResuest: 基于AFN的一个低耦合的iOS端网络框架](https://github.com/chenhuaizhe/CYResuest)
 
-![](http://ww1.sinaimg.cn/large/006y8lVagw1fadzfheyl9j30hs0vktbc.jpg)
+![](http://ww3.sinaimg.cn/large/006y8lVagw1fadzohf1mgj308c0et0ti.jpg)
 
-![](http://ww1.sinaimg.cn/large/006y8lVagw1fadzfh2s62j30hs0vkdh2.jpg)
+![](http://ww2.sinaimg.cn/large/006y8lVagw1fadzogy6crj308c0etwer.jpg)
 
-![](http://ww4.sinaimg.cn/large/006y8lVagw1fadzfhbds0j30hs0vkgnt.jpg)
+![](http://ww1.sinaimg.cn/large/006y8lVagw1fadzogvp01j308c0etq3j.jpg)
 
 ## 问题解析
 
