@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bSm-CD-Lnn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Log-->
+        <scene sceneID="aES-wj-pmc">
+            <objects>
+                <viewController id="BHG-rs-sg6" customClass="LogViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T7n-0J-sxS"/>
+                        <viewControllerLayoutGuide type="bottom" id="ruR-aF-Iqp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5H2-4O-7Lm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="tQr-tC-Oi6"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Log" id="6N3-KL-UIm"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ikv-b8-hc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="663" y="-1925"/>
+        </scene>
+        <!--HttpTest-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tvl-AD-4An">
+                                <rect key="frame" x="0.0" y="-44" width="375" height="711"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uUR-jf-64Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snV-gl-Ujb">
+                                                <rect key="frame" x="60" y="20" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Log"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="showLog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NeQ-sh-g7o"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cO9-7U-yiG">
+                                                <rect key="frame" x="60" y="940" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="DFU"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendDFURequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9wC-Lc-GOL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQ8-7V-XN6">
+                                                <rect key="frame" x="60" y="140" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="GPS Download"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendGPSDownloadRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8cS-Xm-ibC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2S-Qc-76y">
+                                                <rect key="frame" x="60" y="180" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="GPS Upload"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendGPSUploadRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="10u-5W-ekj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fza-Wc-aeS">
+                                                <rect key="frame" x="60" y="220" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Walking Download"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendWalkingDownloadRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6gR-gN-YNw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zW-8o-418">
+                                                <rect key="frame" x="60" y="260" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Walking Upload"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendWalkingUploadRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m16-dl-CpB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIh-4j-lsz">
+                                                <rect key="frame" x="60" y="620" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Login"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendLoginRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C4w-I7-Uaj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDU-43-sAH">
+                                                <rect key="frame" x="60" y="660" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Register"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendRegisterRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2b8-5c-Bz4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WhI-wt-3lq">
+                                                <rect key="frame" x="60" y="700" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Get Userinfo"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendGetUserInfoRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JtT-cX-eyD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkt-yv-V1H">
+                                                <rect key="frame" x="60" y="740" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Update Userinfo"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendUpdateUserinfoRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hF4-T0-ccN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3h7-gp-q0W">
+                                                <rect key="frame" x="60" y="780" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Get Pwd Email"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendGetPasswordByEmailRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rTU-kF-BYh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCH-Mt-r5r">
+                                                <rect key="frame" x="60" y="820" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Get Pwd"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendGetPasswordRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6KR-VG-VwT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUR-c2-r7w">
+                                                <rect key="frame" x="60" y="860" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Change Pwd"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendChangePasswordRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hxi-d4-rfH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xn8-hk-zxe">
+                                                <rect key="frame" x="60" y="900" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Icon Upload"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendIconUploadRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YUA-I2-ey2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDd-5N-GSx">
+                                                <rect key="frame" x="60" y="300" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Heartrate Download"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendHeartrateDownloadRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JaB-ea-yBz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWh-uU-VMT">
+                                                <rect key="frame" x="60" y="340" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Heartrate Upload"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendHeartrateUploadRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qWh-qt-pTY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xq-Rg-Lby">
+                                                <rect key="frame" x="60" y="380" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Heartrate Hours_down"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendHeartHoursDownloadRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="33l-O7-Bf9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uM-ma-7P2">
+                                                <rect key="frame" x="60" y="420" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Heartrate hours_up"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendHeartrateHoursuploadRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p53-5x-mfz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wn0-Xa-WgR">
+                                                <rect key="frame" x="60" y="460" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Sleep Download"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendSleepDownloadRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e6s-sX-2lf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPZ-Pa-gYU">
+                                                <rect key="frame" x="60" y="500" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Sleep Upload"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendSleepUoloadRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z1R-2M-Dwz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3NL-J4-QPU">
+                                                <rect key="frame" x="60" y="1020" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Weather"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendWeatherRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="14Y-aF-cwy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrd-p2-Kcu">
+                                                <rect key="frame" x="60" y="60" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Sports Download"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendSportsDownloadRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q1e-vo-6qK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byD-fY-Rdo">
+                                                <rect key="frame" x="60" y="100" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Sports Upload"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendSportsUploadRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LHC-jR-iWH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lE9-gi-27a">
+                                                <rect key="frame" x="60" y="980" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Log Upload"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendLogFileUploadRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mwN-1u-Xib"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKa-HJ-8uB">
+                                                <rect key="frame" x="60" y="580" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Weight Upload"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendWeightUploadRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Al7-N0-pc8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmN-Md-DIy">
+                                                <rect key="frame" x="60" y="540" width="200" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Weight Download"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.24517918059999999" green="0.72336632010000002" blue="0.31330051399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendWeightDownloadRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bjA-rc-IFF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.97400316687406263" green="1" blue="0.66793028611717997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1100" id="gQq-Oa-wGa"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="uUR-jf-64Q" firstAttribute="centerX" secondItem="tvl-AD-4An" secondAttribute="centerX" id="2Qa-tf-SpV"/>
+                                    <constraint firstItem="uUR-jf-64Q" firstAttribute="leading" secondItem="tvl-AD-4An" secondAttribute="leading" id="ShB-j2-0bk"/>
+                                    <constraint firstAttribute="bottom" secondItem="uUR-jf-64Q" secondAttribute="bottom" constant="1" id="hSm-yY-Qh3"/>
+                                    <constraint firstItem="uUR-jf-64Q" firstAttribute="top" secondItem="tvl-AD-4An" secondAttribute="top" id="ls1-Sp-hRW"/>
+                                    <constraint firstAttribute="trailing" secondItem="uUR-jf-64Q" secondAttribute="trailing" id="yyg-Rq-31X"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tvl-AD-4An" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="7cm-bp-TtA"/>
+                            <constraint firstItem="tvl-AD-4An" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="O2H-0g-Uis"/>
+                            <constraint firstItem="tvl-AD-4An" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UNP-2o-9JO"/>
+                            <constraint firstAttribute="trailing" secondItem="tvl-AD-4An" secondAttribute="trailing" id="Uus-qz-yR0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="HttpTest" id="r5R-fU-4h6">
+                        <barButtonItem key="leftBarButtonItem" title="Log" id="rcw-BJ-BpD"/>
+                        <barButtonItem key="rightBarButtonItem" title="Go" id="09D-zy-Dc8"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1190" y="-1210"/>
+        </scene>
+        <!--Setting-->
+        <scene sceneID="gm5-6B-gVw">
+            <objects>
+                <viewController id="lbL-lK-oy7" customClass="SettingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tu9-Vi-rRx"/>
+                        <viewControllerLayoutGuide type="bottom" id="vX5-6F-cG4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ehj-XY-fuT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jK2-bs-MgX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="settingCell" id="QQq-Ci-tN8">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QQq-Ci-tN8" id="ZzU-D7-GBr">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="lbL-lK-oy7" id="AEH-Sf-KPc"/>
+                                    <outlet property="delegate" destination="lbL-lK-oy7" id="tjw-OP-7xt"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jK2-bs-MgX" secondAttribute="trailing" id="Jlr-E3-Par"/>
+                            <constraint firstItem="jK2-bs-MgX" firstAttribute="leading" secondItem="ehj-XY-fuT" secondAttribute="leading" id="TY4-Lz-kA1"/>
+                            <constraint firstItem="jK2-bs-MgX" firstAttribute="top" secondItem="Tu9-Vi-rRx" secondAttribute="bottom" constant="-64" id="gja-wz-EOI"/>
+                            <constraint firstItem="vX5-6F-cG4" firstAttribute="top" secondItem="jK2-bs-MgX" secondAttribute="bottom" id="kZB-UE-bSI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Setting" id="vKC-VM-VkH" customClass="se">
+                        <barButtonItem key="rightBarButtonItem" title="Info" id="Ptc-e2-VYd">
+                            <color key="tintColor" red="1" green="0.0" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="62D-JI-Sxf" kind="show" id="Z3d-k0-kXi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="jK2-bs-MgX" id="wm0-9M-C93"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8XF-bT-ZAy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-137" y="-2678"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="FnH-1C-fzn">
+            <objects>
+                <viewController id="62D-JI-Sxf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xwm-PD-owC"/>
+                        <viewControllerLayoutGuide type="bottom" id="463-lK-mYu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t4r-cI-Uf5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="622-GH-6fJ" customClass="InfoLabel">
+                                <rect key="frame" x="26" y="74" width="323" height="553"/>
+                                <color key="backgroundColor" red="0.90972405672073364" green="0.9098549485206604" blue="0.90969544649124146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90972405672073364" green="0.9098549485206604" blue="0.90969544649124146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="622-GH-6fJ" firstAttribute="leading" secondItem="t4r-cI-Uf5" secondAttribute="leadingMargin" constant="10" id="7dh-Ss-MbC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="622-GH-6fJ" secondAttribute="trailing" constant="10" id="MtK-rF-tWf"/>
+                            <constraint firstItem="622-GH-6fJ" firstAttribute="top" secondItem="xwm-PD-owC" secondAttribute="bottom" constant="10" id="Put-Wn-xnE"/>
+                            <constraint firstItem="463-lK-mYu" firstAttribute="top" secondItem="622-GH-6fJ" secondAttribute="bottom" constant="40" id="emI-eg-OBf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Info" id="eA2-J8-ssh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="drV-gE-sZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="745" y="-2673"/>
+        </scene>
+        <!--Request-->
+        <scene sceneID="C75-S3-7vq">
+            <objects>
+                <viewController id="fc8-6S-U5T" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GWX-cL-shh"/>
+                        <viewControllerLayoutGuide type="bottom" id="oS1-Gf-n1x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BtP-QN-mF8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EW5-CI-gbi">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.26800958527249541" green="1" blue="0.26950466934997097" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Cmd-H0-WTw"/>
+                                    <constraint firstAttribute="width" constant="200" id="wiq-or-r0p"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="31" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Z0q-fC-j4j">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="basicCell" rowHeight="31" id="KCo-9O-rDU">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="31"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KCo-9O-rDU" id="dQj-0G-WkJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="31"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="mec-uh-bF7" kind="show" id="QzX-lg-123"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="fc8-6S-U5T" id="h6f-os-DXX"/>
+                                    <outlet property="delegate" destination="fc8-6S-U5T" id="44L-ri-vJF"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EW5-CI-gbi" firstAttribute="centerX" secondItem="BtP-QN-mF8" secondAttribute="centerX" id="1tG-HS-ggq"/>
+                            <constraint firstItem="Z0q-fC-j4j" firstAttribute="leading" secondItem="BtP-QN-mF8" secondAttribute="leading" id="JuE-Fs-h1Y"/>
+                            <constraint firstItem="EW5-CI-gbi" firstAttribute="centerY" secondItem="BtP-QN-mF8" secondAttribute="centerY" id="NzZ-4q-lxF"/>
+                            <constraint firstItem="oS1-Gf-n1x" firstAttribute="top" secondItem="Z0q-fC-j4j" secondAttribute="bottom" id="Qyu-63-724"/>
+                            <constraint firstAttribute="trailing" secondItem="Z0q-fC-j4j" secondAttribute="trailing" id="RBR-hF-qLI"/>
+                            <constraint firstItem="Z0q-fC-j4j" firstAttribute="top" secondItem="GWX-cL-shh" secondAttribute="bottom" id="vk7-Ae-6bD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Request" id="qag-Xv-2NR">
+                        <barButtonItem key="leftBarButtonItem" title="Log" id="NMJ-Jz-Efc">
+                            <color key="tintColor" red="1" green="0.0" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="BHG-rs-sg6" kind="show" id="k98-OY-W7i"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Setting" style="done" id="rLw-fm-9Em">
+                            <color key="tintColor" red="1" green="0.0" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="lbL-lK-oy7" kind="show" id="vz5-Sp-URH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="EW5-CI-gbi" id="7de-27-Xs3"/>
+                        <outlet property="tableView" destination="Z0q-fC-j4j" id="iih-56-ean"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OEG-o4-KTL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-121" y="-1925"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="pVb-lN-y2J">
+            <objects>
+                <viewController id="mec-uh-bF7" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QHv-dm-bxk"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Ia-n5-pDc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kIR-oC-OVc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dOP-Gn-A1c">
+                                <rect key="frame" x="67.5" y="84" width="240" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PbB-BW-Yhe"/>
+                                    <constraint firstAttribute="width" constant="240" id="yWm-Li-hPb"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Url"/>
+                                    <segment title="Request"/>
+                                    <segment title="Responce"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="0.0" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="segmentedControlValueChanged:" destination="mec-uh-bF7" eventType="valueChanged" id="iTe-RN-iYK"/>
+                                </connections>
+                            </segmentedControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="have no data now" translatesAutoresizingMaskIntoConstraints="NO" id="ZZo-w2-ZHf">
+                                <rect key="frame" x="0.0" y="154" width="375" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="EWn-Oc-Kns"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" keyboardAppearance="alert"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90819468800885694" green="0.90819468800885694" blue="0.90819468800885694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZZo-w2-ZHf" secondAttribute="trailing" id="3C7-qd-KZH"/>
+                            <constraint firstItem="ZZo-w2-ZHf" firstAttribute="leading" secondItem="kIR-oC-OVc" secondAttribute="leading" id="Fkf-sk-ZpW"/>
+                            <constraint firstItem="dOP-Gn-A1c" firstAttribute="centerX" secondItem="kIR-oC-OVc" secondAttribute="centerX" id="G5z-Zb-Vnl"/>
+                            <constraint firstItem="ZZo-w2-ZHf" firstAttribute="top" secondItem="dOP-Gn-A1c" secondAttribute="bottom" constant="40" id="I7M-55-i0l"/>
+                            <constraint firstItem="dOP-Gn-A1c" firstAttribute="top" secondItem="QHv-dm-bxk" secondAttribute="bottom" constant="20" id="Pyf-De-qda"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detail" id="lsu-yu-ugD">
+                        <barButtonItem key="rightBarButtonItem" title="retCode" id="E6Q-m1-neV">
+                            <color key="tintColor" red="1" green="0.0" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="xRH-QW-P8f" kind="show" id="TyW-Ck-QXQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="segment" destination="dOP-Gn-A1c" id="UYC-Mn-jYU"/>
+                        <outlet property="textView" destination="ZZo-w2-ZHf" id="3jy-Lf-vFI"/>
+                        <outlet property="textViewHeightConstraint" destination="EWn-Oc-Kns" id="RRF-fl-pea"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="asZ-td-bg8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-122" y="-1172"/>
+        </scene>
+        <!--retCode-->
+        <scene sceneID="MJE-Ah-Y2C">
+            <objects>
+                <viewController id="xRH-QW-P8f" customClass="RetCodeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5kT-Qq-RyA"/>
+                        <viewControllerLayoutGuide type="bottom" id="vxe-eA-vbC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TWR-vR-wG8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T5L-9q-KdL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="retCodeCell" id="JUN-H3-F1w">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JUN-H3-F1w" id="Oi6-Ui-BUr">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="xRH-QW-P8f" id="4sd-Gr-PLQ"/>
+                                    <outlet property="delegate" destination="xRH-QW-P8f" id="yeN-UX-52t"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="T5L-9q-KdL" secondAttribute="trailing" id="36g-87-DeW"/>
+                            <constraint firstItem="T5L-9q-KdL" firstAttribute="leading" secondItem="TWR-vR-wG8" secondAttribute="leading" id="dGc-pJ-Eiw"/>
+                            <constraint firstItem="T5L-9q-KdL" firstAttribute="top" secondItem="TWR-vR-wG8" secondAttribute="top" id="q12-ci-URJ"/>
+                            <constraint firstItem="vxe-eA-vbC" firstAttribute="top" secondItem="T5L-9q-KdL" secondAttribute="bottom" id="wVE-AL-Ahx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="retCode" id="5ML-zJ-YhR"/>
+                    <connections>
+                        <outlet property="tableView" destination="T5L-9q-KdL" id="eZf-iM-ZBp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8u2-2G-GWx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="693.60000000000002" y="-1165.3673163418291"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xwF-2L-Npu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bSm-CD-Lnn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BYa-X2-IXW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fc8-6S-U5T" kind="relationship" relationship="rootViewController" id="swr-gf-Uxr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EVO-B5-qxY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1012" y="-1925"/>
+        </scene>
+    </scenes>
+</document>

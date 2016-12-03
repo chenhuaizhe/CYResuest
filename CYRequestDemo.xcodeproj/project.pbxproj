@@ -1,0 +1,1025 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		010B03A71DF2A04A00E3BA4B /* NSString+MEMITYPE.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03911DF2A04A00E3BA4B /* NSString+MEMITYPE.m */; };
+		010B03A81DF2A04A00E3BA4B /* UIColor+RGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03931DF2A04A00E3BA4B /* UIColor+RGB.m */; };
+		010B03A91DF2A04A00E3BA4B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03961DF2A04A00E3BA4B /* BaseViewController.m */; };
+		010B03AA1DF2A04A00E3BA4B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03981DF2A04A00E3BA4B /* DetailViewController.m */; };
+		010B03AB1DF2A04A00E3BA4B /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B039A1DF2A04A00E3BA4B /* LogViewController.m */; };
+		010B03AC1DF2A04A00E3BA4B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B039C1DF2A04A00E3BA4B /* MainViewController.m */; };
+		010B03AD1DF2A04A00E3BA4B /* RetCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B039E1DF2A04A00E3BA4B /* RetCodeViewController.m */; };
+		010B03AE1DF2A04A00E3BA4B /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03A01DF2A04A00E3BA4B /* SettingViewController.m */; };
+		010B03AF1DF2A04A00E3BA4B /* 147814529871993714_20161202.txt in Resources */ = {isa = PBXBuildFile; fileRef = 010B03A21DF2A04A00E3BA4B /* 147814529871993714_20161202.txt */; };
+		010B03B01DF2A04A00E3BA4B /* log.txt in Resources */ = {isa = PBXBuildFile; fileRef = 010B03A31DF2A04A00E3BA4B /* log.txt */; };
+		010B03B11DF2A04A00E3BA4B /* InfoLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03A61DF2A04A00E3BA4B /* InfoLabel.m */; };
+		010B03B41DF2A21F00E3BA4B /* CYWeatherRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03B31DF2A21F00E3BA4B /* CYWeatherRequest.m */; };
+		010B03BC1DF2C16900E3BA4B /* CYGPSFileUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03B71DF2C16900E3BA4B /* CYGPSFileUploadRequest.m */; };
+		010B03BD1DF2C16900E3BA4B /* CYIconUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03B91DF2C16900E3BA4B /* CYIconUploadRequest.m */; };
+		010B03BE1DF2C16900E3BA4B /* CYLogUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03BB1DF2C16900E3BA4B /* CYLogUploadRequest.m */; };
+		010B03C21DF2C22E00E3BA4B /* CYHttpResponseSerializerWithData.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03C11DF2C22E00E3BA4B /* CYHttpResponseSerializerWithData.m */; };
+		010B03C61DF2CFEC00E3BA4B /* CYLoginResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03C51DF2CFEC00E3BA4B /* CYLoginResponce.m */; };
+		010B03C91DF2D00300E3BA4B /* CYRegisterResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03C81DF2D00300E3BA4B /* CYRegisterResponce.m */; };
+		010B03CC1DF2D09700E3BA4B /* CYGetUserInfoResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03CB1DF2D09700E3BA4B /* CYGetUserInfoResponce.m */; };
+		010B03CF1DF2D0AF00E3BA4B /* CYUpdateUserInfoResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03CE1DF2D0AF00E3BA4B /* CYUpdateUserInfoResponce.m */; };
+		010B03D21DF2D0CB00E3BA4B /* CYGetPwdByEmailResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03D11DF2D0CB00E3BA4B /* CYGetPwdByEmailResponce.m */; };
+		010B03D51DF2D0E300E3BA4B /* CYGetPwdResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03D41DF2D0E300E3BA4B /* CYGetPwdResponce.m */; };
+		010B03D81DF2D0F800E3BA4B /* CYChangePwdResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03D71DF2D0F800E3BA4B /* CYChangePwdResponce.m */; };
+		010B03DB1DF2D11200E3BA4B /* CYCheckEmailExistResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03DA1DF2D11200E3BA4B /* CYCheckEmailExistResponce.m */; };
+		010B03DE1DF2D14700E3BA4B /* CYSleepUploadResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03DD1DF2D14700E3BA4B /* CYSleepUploadResponce.m */; };
+		010B03E11DF2D15C00E3BA4B /* CYSleepDownloadResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03E01DF2D15C00E3BA4B /* CYSleepDownloadResponce.m */; };
+		010B03E41DF2D17C00E3BA4B /* CYHeartrateUploadResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03E31DF2D17B00E3BA4B /* CYHeartrateUploadResponce.m */; };
+		010B03E71DF2D19300E3BA4B /* CYHeartrateDownloadResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03E61DF2D19300E3BA4B /* CYHeartrateDownloadResponce.m */; };
+		010B03EA1DF2D1AC00E3BA4B /* CYHrHourUploadResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03E91DF2D1AC00E3BA4B /* CYHrHourUploadResponce.m */; };
+		010B03ED1DF2D1C000E3BA4B /* CYHrHourDownloadResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03EC1DF2D1C000E3BA4B /* CYHrHourDownloadResponce.m */; };
+		010B03F01DF2D1F100E3BA4B /* CYWeightDownloadResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03EF1DF2D1F100E3BA4B /* CYWeightDownloadResponce.m */; };
+		010B03F31DF2D20700E3BA4B /* CYWeightUploadResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03F21DF2D20700E3BA4B /* CYWeightUploadResponce.m */; };
+		010B03F61DF2D24D00E3BA4B /* CYGPSFileUploadResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03F51DF2D24D00E3BA4B /* CYGPSFileUploadResponce.m */; };
+		010B03F91DF2D26D00E3BA4B /* CYIconUploadResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03F81DF2D26C00E3BA4B /* CYIconUploadResponce.m */; };
+		010B03FC1DF2D28500E3BA4B /* CYLogUploadResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03FB1DF2D28500E3BA4B /* CYLogUploadResponce.m */; };
+		010B03FF1DF2D2A200E3BA4B /* CYFWUpdateResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B03FE1DF2D2A200E3BA4B /* CYFWUpdateResponce.m */; };
+		010B04021DF2D2B000E3BA4B /* CYWeatherResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 010B04011DF2D2B000E3BA4B /* CYWeatherResponce.m */; };
+		016D0D271DEC4D64003BDC7B /* CYHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 016D0D131DEC4D64003BDC7B /* CYHTTPManager.m */; };
+		016D0D291DEC4D64003BDC7B /* CYBasicRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 016D0D191DEC4D64003BDC7B /* CYBasicRequest.m */; };
+		016D0D2A1DEC4D64003BDC7B /* CYSportsDownloadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 016D0D1D1DEC4D64003BDC7B /* CYSportsDownloadRequest.m */; };
+		016D0D2B1DEC4D64003BDC7B /* CYBasicResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 016D0D211DEC4D64003BDC7B /* CYBasicResponce.m */; };
+		016D0D2C1DEC4D64003BDC7B /* CYSportsDownloadResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 016D0D251DEC4D64003BDC7B /* CYSportsDownloadResponce.m */; };
+		016D0D2F1DEC4E58003BDC7B /* CYSportsUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 016D0D2E1DEC4E58003BDC7B /* CYSportsUploadRequest.m */; };
+		016D0D321DED2994003BDC7B /* CYSportsUploadResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 016D0D311DED2994003BDC7B /* CYSportsUploadResponce.m */; };
+		01C4D5281DEE692A00AFAF49 /* NetWorkhandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D5271DEE692A00AFAF49 /* NetWorkhandle.m */; };
+		01C4D52B1DEE9C5800AFAF49 /* CYWalkingUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D52A1DEE9C5800AFAF49 /* CYWalkingUploadRequest.m */; };
+		01C4D52E1DEE9C7B00AFAF49 /* CYWalkingDownloadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D52D1DEE9C7B00AFAF49 /* CYWalkingDownloadRequest.m */; };
+		01C4D5311DEE9C9B00AFAF49 /* CYGpsUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D5301DEE9C9B00AFAF49 /* CYGpsUploadRequest.m */; };
+		01C4D5341DEE9CBA00AFAF49 /* CYGpsDownloadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D5331DEE9CBA00AFAF49 /* CYGpsDownloadRequest.m */; };
+		01C4D53D1DEE9D8100AFAF49 /* CYSleepUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D53C1DEE9D8100AFAF49 /* CYSleepUploadRequest.m */; };
+		01C4D5401DEE9D9B00AFAF49 /* CYSleepDownloadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D53F1DEE9D9B00AFAF49 /* CYSleepDownloadRequest.m */; };
+		01C4D5431DEE9DB900AFAF49 /* CYWeightDownloadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D5421DEE9DB900AFAF49 /* CYWeightDownloadRequest.m */; };
+		01C4D5461DEE9DCD00AFAF49 /* CYWeightUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D5451DEE9DCD00AFAF49 /* CYWeightUploadRequest.m */; };
+		01C4D5491DEE9DE400AFAF49 /* CYHeartrateUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D5481DEE9DE400AFAF49 /* CYHeartrateUploadRequest.m */; };
+		01C4D54C1DEE9E1300AFAF49 /* CYHeartrateDownloadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D54B1DEE9E1300AFAF49 /* CYHeartrateDownloadRequest.m */; };
+		01C4D54F1DEE9E3C00AFAF49 /* CYHrHourUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D54E1DEE9E3C00AFAF49 /* CYHrHourUploadRequest.m */; };
+		01C4D5521DEE9E5300AFAF49 /* CYHrHourDownloadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D5511DEE9E5300AFAF49 /* CYHrHourDownloadRequest.m */; };
+		01C4D5581DEE9EBD00AFAF49 /* CYWalkingDownloadResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D5571DEE9EBD00AFAF49 /* CYWalkingDownloadResponce.m */; };
+		01C4D55B1DEE9EDC00AFAF49 /* CYWalkingUploadResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D55A1DEE9EDC00AFAF49 /* CYWalkingUploadResponce.m */; };
+		01C4D5631DEE9F2F00AFAF49 /* CYGpsDownloadResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D5621DEE9F2F00AFAF49 /* CYGpsDownloadResponce.m */; };
+		01C4D5661DEE9F4000AFAF49 /* CYGpsUploadResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D5651DEE9F4000AFAF49 /* CYGpsUploadResponce.m */; };
+		01C4D5691DEED07800AFAF49 /* CYLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D5681DEED07800AFAF49 /* CYLoginRequest.m */; };
+		01C4D56C1DEED09800AFAF49 /* CYRegisterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D56B1DEED09800AFAF49 /* CYRegisterRequest.m */; };
+		01C4D56F1DEED0BA00AFAF49 /* CYGetUserInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D56E1DEED0BA00AFAF49 /* CYGetUserInfoRequest.m */; };
+		01C4D5721DEED0D400AFAF49 /* CYUpdateUserInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D5711DEED0D400AFAF49 /* CYUpdateUserInfoRequest.m */; };
+		01C4D5751DEED0FC00AFAF49 /* CYGetPwdByEmailRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D5741DEED0FC00AFAF49 /* CYGetPwdByEmailRequest.m */; };
+		01C4D5781DEED10D00AFAF49 /* CYGetPwdRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D5771DEED10D00AFAF49 /* CYGetPwdRequest.m */; };
+		01C4D57B1DEED12000AFAF49 /* CYChangePwdRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D57A1DEED12000AFAF49 /* CYChangePwdRequest.m */; };
+		01C4D57E1DEED14600AFAF49 /* CYCheckEmailExistRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D57D1DEED14600AFAF49 /* CYCheckEmailExistRequest.m */; };
+		01C4D5871DEEF42000AFAF49 /* CYFWUpdateRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D5861DEEF42000AFAF49 /* CYFWUpdateRequest.m */; };
+		01F66D9E1DEC06A8004D32C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F66D9D1DEC06A8004D32C4 /* main.m */; };
+		01F66DA11DEC06A8004D32C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F66DA01DEC06A8004D32C4 /* AppDelegate.m */; };
+		01F66DA71DEC06A8004D32C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01F66DA51DEC06A8004D32C4 /* Main.storyboard */; };
+		01F66DA91DEC06A8004D32C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01F66DA81DEC06A8004D32C4 /* Assets.xcassets */; };
+		01F66DAC1DEC06A8004D32C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01F66DAA1DEC06A8004D32C4 /* LaunchScreen.storyboard */; };
+		EC481F5608F6E93A881C4F58 /* libPods-CYRequestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C4D900611918250DC834EE /* libPods-CYRequestDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		010B03901DF2A04A00E3BA4B /* NSString+MEMITYPE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+MEMITYPE.h"; path = "../../Categroy/NSString+MEMITYPE.h"; sourceTree = "<group>"; };
+		010B03911DF2A04A00E3BA4B /* NSString+MEMITYPE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+MEMITYPE.m"; path = "../../Categroy/NSString+MEMITYPE.m"; sourceTree = "<group>"; };
+		010B03921DF2A04A00E3BA4B /* UIColor+RGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RGB.h"; sourceTree = "<group>"; };
+		010B03931DF2A04A00E3BA4B /* UIColor+RGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RGB.m"; sourceTree = "<group>"; };
+		010B03951DF2A04A00E3BA4B /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		010B03961DF2A04A00E3BA4B /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		010B03971DF2A04A00E3BA4B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		010B03981DF2A04A00E3BA4B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		010B03991DF2A04A00E3BA4B /* LogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogViewController.h; sourceTree = "<group>"; };
+		010B039A1DF2A04A00E3BA4B /* LogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogViewController.m; sourceTree = "<group>"; };
+		010B039B1DF2A04A00E3BA4B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		010B039C1DF2A04A00E3BA4B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		010B039D1DF2A04A00E3BA4B /* RetCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetCodeViewController.h; sourceTree = "<group>"; };
+		010B039E1DF2A04A00E3BA4B /* RetCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetCodeViewController.m; sourceTree = "<group>"; };
+		010B039F1DF2A04A00E3BA4B /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		010B03A01DF2A04A00E3BA4B /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		010B03A21DF2A04A00E3BA4B /* 147814529871993714_20161202.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 147814529871993714_20161202.txt; sourceTree = "<group>"; };
+		010B03A31DF2A04A00E3BA4B /* log.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = log.txt; sourceTree = "<group>"; };
+		010B03A51DF2A04A00E3BA4B /* InfoLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoLabel.h; sourceTree = "<group>"; };
+		010B03A61DF2A04A00E3BA4B /* InfoLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoLabel.m; sourceTree = "<group>"; };
+		010B03B21DF2A21F00E3BA4B /* CYWeatherRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYWeatherRequest.h; sourceTree = "<group>"; };
+		010B03B31DF2A21F00E3BA4B /* CYWeatherRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYWeatherRequest.m; sourceTree = "<group>"; };
+		010B03B61DF2C16900E3BA4B /* CYGPSFileUploadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYGPSFileUploadRequest.h; sourceTree = "<group>"; };
+		010B03B71DF2C16900E3BA4B /* CYGPSFileUploadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYGPSFileUploadRequest.m; sourceTree = "<group>"; };
+		010B03B81DF2C16900E3BA4B /* CYIconUploadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYIconUploadRequest.h; sourceTree = "<group>"; };
+		010B03B91DF2C16900E3BA4B /* CYIconUploadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYIconUploadRequest.m; sourceTree = "<group>"; };
+		010B03BA1DF2C16900E3BA4B /* CYLogUploadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLogUploadRequest.h; sourceTree = "<group>"; };
+		010B03BB1DF2C16900E3BA4B /* CYLogUploadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLogUploadRequest.m; sourceTree = "<group>"; };
+		010B03C01DF2C22E00E3BA4B /* CYHttpResponseSerializerWithData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYHttpResponseSerializerWithData.h; sourceTree = "<group>"; };
+		010B03C11DF2C22E00E3BA4B /* CYHttpResponseSerializerWithData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYHttpResponseSerializerWithData.m; sourceTree = "<group>"; };
+		010B03C41DF2CFEC00E3BA4B /* CYLoginResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLoginResponce.h; sourceTree = "<group>"; };
+		010B03C51DF2CFEC00E3BA4B /* CYLoginResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLoginResponce.m; sourceTree = "<group>"; };
+		010B03C71DF2D00300E3BA4B /* CYRegisterResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRegisterResponce.h; sourceTree = "<group>"; };
+		010B03C81DF2D00300E3BA4B /* CYRegisterResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRegisterResponce.m; sourceTree = "<group>"; };
+		010B03CA1DF2D09700E3BA4B /* CYGetUserInfoResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYGetUserInfoResponce.h; sourceTree = "<group>"; };
+		010B03CB1DF2D09700E3BA4B /* CYGetUserInfoResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYGetUserInfoResponce.m; sourceTree = "<group>"; };
+		010B03CD1DF2D0AF00E3BA4B /* CYUpdateUserInfoResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYUpdateUserInfoResponce.h; sourceTree = "<group>"; };
+		010B03CE1DF2D0AF00E3BA4B /* CYUpdateUserInfoResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYUpdateUserInfoResponce.m; sourceTree = "<group>"; };
+		010B03D01DF2D0CB00E3BA4B /* CYGetPwdByEmailResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYGetPwdByEmailResponce.h; sourceTree = "<group>"; };
+		010B03D11DF2D0CB00E3BA4B /* CYGetPwdByEmailResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYGetPwdByEmailResponce.m; sourceTree = "<group>"; };
+		010B03D31DF2D0E300E3BA4B /* CYGetPwdResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYGetPwdResponce.h; sourceTree = "<group>"; };
+		010B03D41DF2D0E300E3BA4B /* CYGetPwdResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYGetPwdResponce.m; sourceTree = "<group>"; };
+		010B03D61DF2D0F800E3BA4B /* CYChangePwdResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYChangePwdResponce.h; sourceTree = "<group>"; };
+		010B03D71DF2D0F800E3BA4B /* CYChangePwdResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYChangePwdResponce.m; sourceTree = "<group>"; };
+		010B03D91DF2D11200E3BA4B /* CYCheckEmailExistResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYCheckEmailExistResponce.h; sourceTree = "<group>"; };
+		010B03DA1DF2D11200E3BA4B /* CYCheckEmailExistResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYCheckEmailExistResponce.m; sourceTree = "<group>"; };
+		010B03DC1DF2D14700E3BA4B /* CYSleepUploadResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYSleepUploadResponce.h; sourceTree = "<group>"; };
+		010B03DD1DF2D14700E3BA4B /* CYSleepUploadResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYSleepUploadResponce.m; sourceTree = "<group>"; };
+		010B03DF1DF2D15C00E3BA4B /* CYSleepDownloadResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYSleepDownloadResponce.h; sourceTree = "<group>"; };
+		010B03E01DF2D15C00E3BA4B /* CYSleepDownloadResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYSleepDownloadResponce.m; sourceTree = "<group>"; };
+		010B03E21DF2D17B00E3BA4B /* CYHeartrateUploadResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYHeartrateUploadResponce.h; sourceTree = "<group>"; };
+		010B03E31DF2D17B00E3BA4B /* CYHeartrateUploadResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYHeartrateUploadResponce.m; sourceTree = "<group>"; };
+		010B03E51DF2D19300E3BA4B /* CYHeartrateDownloadResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYHeartrateDownloadResponce.h; sourceTree = "<group>"; };
+		010B03E61DF2D19300E3BA4B /* CYHeartrateDownloadResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYHeartrateDownloadResponce.m; sourceTree = "<group>"; };
+		010B03E81DF2D1AC00E3BA4B /* CYHrHourUploadResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYHrHourUploadResponce.h; sourceTree = "<group>"; };
+		010B03E91DF2D1AC00E3BA4B /* CYHrHourUploadResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYHrHourUploadResponce.m; sourceTree = "<group>"; };
+		010B03EB1DF2D1C000E3BA4B /* CYHrHourDownloadResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYHrHourDownloadResponce.h; sourceTree = "<group>"; };
+		010B03EC1DF2D1C000E3BA4B /* CYHrHourDownloadResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYHrHourDownloadResponce.m; sourceTree = "<group>"; };
+		010B03EE1DF2D1F100E3BA4B /* CYWeightDownloadResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYWeightDownloadResponce.h; sourceTree = "<group>"; };
+		010B03EF1DF2D1F100E3BA4B /* CYWeightDownloadResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYWeightDownloadResponce.m; sourceTree = "<group>"; };
+		010B03F11DF2D20700E3BA4B /* CYWeightUploadResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYWeightUploadResponce.h; sourceTree = "<group>"; };
+		010B03F21DF2D20700E3BA4B /* CYWeightUploadResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYWeightUploadResponce.m; sourceTree = "<group>"; };
+		010B03F41DF2D24D00E3BA4B /* CYGPSFileUploadResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYGPSFileUploadResponce.h; sourceTree = "<group>"; };
+		010B03F51DF2D24D00E3BA4B /* CYGPSFileUploadResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYGPSFileUploadResponce.m; sourceTree = "<group>"; };
+		010B03F71DF2D26C00E3BA4B /* CYIconUploadResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYIconUploadResponce.h; sourceTree = "<group>"; };
+		010B03F81DF2D26C00E3BA4B /* CYIconUploadResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYIconUploadResponce.m; sourceTree = "<group>"; };
+		010B03FA1DF2D28500E3BA4B /* CYLogUploadResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLogUploadResponce.h; sourceTree = "<group>"; };
+		010B03FB1DF2D28500E3BA4B /* CYLogUploadResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLogUploadResponce.m; sourceTree = "<group>"; };
+		010B03FD1DF2D2A200E3BA4B /* CYFWUpdateResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYFWUpdateResponce.h; sourceTree = "<group>"; };
+		010B03FE1DF2D2A200E3BA4B /* CYFWUpdateResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYFWUpdateResponce.m; sourceTree = "<group>"; };
+		010B04001DF2D2B000E3BA4B /* CYWeatherResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYWeatherResponce.h; sourceTree = "<group>"; };
+		010B04011DF2D2B000E3BA4B /* CYWeatherResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYWeatherResponce.m; sourceTree = "<group>"; };
+		016D0D121DEC4D64003BDC7B /* CYHTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYHTTPManager.h; sourceTree = "<group>"; };
+		016D0D131DEC4D64003BDC7B /* CYHTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYHTTPManager.m; sourceTree = "<group>"; };
+		016D0D141DEC4D64003BDC7B /* CYHttpProtocolDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYHttpProtocolDef.h; sourceTree = "<group>"; };
+		016D0D181DEC4D64003BDC7B /* CYBasicRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CYBasicRequest.h; path = Request/CYBasicRequest.h; sourceTree = "<group>"; };
+		016D0D191DEC4D64003BDC7B /* CYBasicRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CYBasicRequest.m; path = Request/CYBasicRequest.m; sourceTree = "<group>"; };
+		016D0D1C1DEC4D64003BDC7B /* CYSportsDownloadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYSportsDownloadRequest.h; sourceTree = "<group>"; };
+		016D0D1D1DEC4D64003BDC7B /* CYSportsDownloadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYSportsDownloadRequest.m; sourceTree = "<group>"; };
+		016D0D201DEC4D64003BDC7B /* CYBasicResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CYBasicResponce.h; path = Responce/CYBasicResponce.h; sourceTree = "<group>"; };
+		016D0D211DEC4D64003BDC7B /* CYBasicResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CYBasicResponce.m; path = Responce/CYBasicResponce.m; sourceTree = "<group>"; };
+		016D0D241DEC4D64003BDC7B /* CYSportsDownloadResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYSportsDownloadResponce.h; sourceTree = "<group>"; };
+		016D0D251DEC4D64003BDC7B /* CYSportsDownloadResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYSportsDownloadResponce.m; sourceTree = "<group>"; };
+		016D0D2D1DEC4E58003BDC7B /* CYSportsUploadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYSportsUploadRequest.h; sourceTree = "<group>"; };
+		016D0D2E1DEC4E58003BDC7B /* CYSportsUploadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYSportsUploadRequest.m; sourceTree = "<group>"; };
+		016D0D301DED2994003BDC7B /* CYSportsUploadResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYSportsUploadResponce.h; sourceTree = "<group>"; };
+		016D0D311DED2994003BDC7B /* CYSportsUploadResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYSportsUploadResponce.m; sourceTree = "<group>"; };
+		016D0D331DED2AAC003BDC7B /* CYRequestHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYRequestHeader.h; sourceTree = "<group>"; };
+		016D0D341DED2AC0003BDC7B /* CYResponceHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYResponceHeader.h; sourceTree = "<group>"; };
+		01C400F11DF11A35006A62B4 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		01C4D5221DEDAF8500AFAF49 /* CommonDefHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDefHeader.h; sourceTree = "<group>"; };
+		01C4D5261DEE692A00AFAF49 /* NetWorkhandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkhandle.h; sourceTree = "<group>"; };
+		01C4D5271DEE692A00AFAF49 /* NetWorkhandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkhandle.m; sourceTree = "<group>"; };
+		01C4D5291DEE9C5800AFAF49 /* CYWalkingUploadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYWalkingUploadRequest.h; sourceTree = "<group>"; };
+		01C4D52A1DEE9C5800AFAF49 /* CYWalkingUploadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYWalkingUploadRequest.m; sourceTree = "<group>"; };
+		01C4D52C1DEE9C7B00AFAF49 /* CYWalkingDownloadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYWalkingDownloadRequest.h; sourceTree = "<group>"; };
+		01C4D52D1DEE9C7B00AFAF49 /* CYWalkingDownloadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYWalkingDownloadRequest.m; sourceTree = "<group>"; };
+		01C4D52F1DEE9C9B00AFAF49 /* CYGpsUploadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYGpsUploadRequest.h; sourceTree = "<group>"; };
+		01C4D5301DEE9C9B00AFAF49 /* CYGpsUploadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYGpsUploadRequest.m; sourceTree = "<group>"; };
+		01C4D5321DEE9CBA00AFAF49 /* CYGpsDownloadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYGpsDownloadRequest.h; sourceTree = "<group>"; };
+		01C4D5331DEE9CBA00AFAF49 /* CYGpsDownloadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYGpsDownloadRequest.m; sourceTree = "<group>"; };
+		01C4D53B1DEE9D8100AFAF49 /* CYSleepUploadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYSleepUploadRequest.h; sourceTree = "<group>"; };
+		01C4D53C1DEE9D8100AFAF49 /* CYSleepUploadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYSleepUploadRequest.m; sourceTree = "<group>"; };
+		01C4D53E1DEE9D9B00AFAF49 /* CYSleepDownloadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYSleepDownloadRequest.h; sourceTree = "<group>"; };
+		01C4D53F1DEE9D9B00AFAF49 /* CYSleepDownloadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYSleepDownloadRequest.m; sourceTree = "<group>"; };
+		01C4D5411DEE9DB900AFAF49 /* CYWeightDownloadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYWeightDownloadRequest.h; sourceTree = "<group>"; };
+		01C4D5421DEE9DB900AFAF49 /* CYWeightDownloadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYWeightDownloadRequest.m; sourceTree = "<group>"; };
+		01C4D5441DEE9DCD00AFAF49 /* CYWeightUploadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYWeightUploadRequest.h; sourceTree = "<group>"; };
+		01C4D5451DEE9DCD00AFAF49 /* CYWeightUploadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYWeightUploadRequest.m; sourceTree = "<group>"; };
+		01C4D5471DEE9DE400AFAF49 /* CYHeartrateUploadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYHeartrateUploadRequest.h; sourceTree = "<group>"; };
+		01C4D5481DEE9DE400AFAF49 /* CYHeartrateUploadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYHeartrateUploadRequest.m; sourceTree = "<group>"; };
+		01C4D54A1DEE9E1300AFAF49 /* CYHeartrateDownloadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYHeartrateDownloadRequest.h; sourceTree = "<group>"; };
+		01C4D54B1DEE9E1300AFAF49 /* CYHeartrateDownloadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYHeartrateDownloadRequest.m; sourceTree = "<group>"; };
+		01C4D54D1DEE9E3C00AFAF49 /* CYHrHourUploadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYHrHourUploadRequest.h; sourceTree = "<group>"; };
+		01C4D54E1DEE9E3C00AFAF49 /* CYHrHourUploadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYHrHourUploadRequest.m; sourceTree = "<group>"; };
+		01C4D5501DEE9E5300AFAF49 /* CYHrHourDownloadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYHrHourDownloadRequest.h; sourceTree = "<group>"; };
+		01C4D5511DEE9E5300AFAF49 /* CYHrHourDownloadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYHrHourDownloadRequest.m; sourceTree = "<group>"; };
+		01C4D5561DEE9EBD00AFAF49 /* CYWalkingDownloadResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYWalkingDownloadResponce.h; sourceTree = "<group>"; };
+		01C4D5571DEE9EBD00AFAF49 /* CYWalkingDownloadResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYWalkingDownloadResponce.m; sourceTree = "<group>"; };
+		01C4D5591DEE9EDC00AFAF49 /* CYWalkingUploadResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYWalkingUploadResponce.h; sourceTree = "<group>"; };
+		01C4D55A1DEE9EDC00AFAF49 /* CYWalkingUploadResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYWalkingUploadResponce.m; sourceTree = "<group>"; };
+		01C4D5611DEE9F2F00AFAF49 /* CYGpsDownloadResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYGpsDownloadResponce.h; sourceTree = "<group>"; };
+		01C4D5621DEE9F2F00AFAF49 /* CYGpsDownloadResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYGpsDownloadResponce.m; sourceTree = "<group>"; };
+		01C4D5641DEE9F4000AFAF49 /* CYGpsUploadResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYGpsUploadResponce.h; sourceTree = "<group>"; };
+		01C4D5651DEE9F4000AFAF49 /* CYGpsUploadResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYGpsUploadResponce.m; sourceTree = "<group>"; };
+		01C4D5671DEED07700AFAF49 /* CYLoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLoginRequest.h; sourceTree = "<group>"; };
+		01C4D5681DEED07800AFAF49 /* CYLoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLoginRequest.m; sourceTree = "<group>"; };
+		01C4D56A1DEED09800AFAF49 /* CYRegisterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRegisterRequest.h; sourceTree = "<group>"; };
+		01C4D56B1DEED09800AFAF49 /* CYRegisterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRegisterRequest.m; sourceTree = "<group>"; };
+		01C4D56D1DEED0BA00AFAF49 /* CYGetUserInfoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYGetUserInfoRequest.h; sourceTree = "<group>"; };
+		01C4D56E1DEED0BA00AFAF49 /* CYGetUserInfoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYGetUserInfoRequest.m; sourceTree = "<group>"; };
+		01C4D5701DEED0D400AFAF49 /* CYUpdateUserInfoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYUpdateUserInfoRequest.h; sourceTree = "<group>"; };
+		01C4D5711DEED0D400AFAF49 /* CYUpdateUserInfoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYUpdateUserInfoRequest.m; sourceTree = "<group>"; };
+		01C4D5731DEED0FC00AFAF49 /* CYGetPwdByEmailRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYGetPwdByEmailRequest.h; sourceTree = "<group>"; };
+		01C4D5741DEED0FC00AFAF49 /* CYGetPwdByEmailRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYGetPwdByEmailRequest.m; sourceTree = "<group>"; };
+		01C4D5761DEED10D00AFAF49 /* CYGetPwdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYGetPwdRequest.h; sourceTree = "<group>"; };
+		01C4D5771DEED10D00AFAF49 /* CYGetPwdRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYGetPwdRequest.m; sourceTree = "<group>"; };
+		01C4D5791DEED12000AFAF49 /* CYChangePwdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYChangePwdRequest.h; sourceTree = "<group>"; };
+		01C4D57A1DEED12000AFAF49 /* CYChangePwdRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYChangePwdRequest.m; sourceTree = "<group>"; };
+		01C4D57C1DEED14600AFAF49 /* CYCheckEmailExistRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYCheckEmailExistRequest.h; sourceTree = "<group>"; };
+		01C4D57D1DEED14600AFAF49 /* CYCheckEmailExistRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYCheckEmailExistRequest.m; sourceTree = "<group>"; };
+		01C4D5851DEEF42000AFAF49 /* CYFWUpdateRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYFWUpdateRequest.h; sourceTree = "<group>"; };
+		01C4D5861DEEF42000AFAF49 /* CYFWUpdateRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYFWUpdateRequest.m; sourceTree = "<group>"; };
+		01F66D991DEC06A8004D32C4 /* CYRequestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYRequestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01F66D9D1DEC06A8004D32C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		01F66D9F1DEC06A8004D32C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		01F66DA01DEC06A8004D32C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		01F66DA61DEC06A8004D32C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01F66DA81DEC06A8004D32C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01F66DAB1DEC06A8004D32C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01F66DAD1DEC06A8004D32C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55B8CCA22B9CFCC36142D857 /* Pods-CYRequestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYRequestDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CYRequestDemo/Pods-CYRequestDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		73B80F897FC74A4BEB0E1F33 /* Pods-CYRequestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYRequestDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CYRequestDemo/Pods-CYRequestDemo.release.xcconfig"; sourceTree = "<group>"; };
+		83C4D900611918250DC834EE /* libPods-CYRequestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CYRequestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01F66D961DEC06A8004D32C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC481F5608F6E93A881C4F58 /* libPods-CYRequestDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		010B038F1DF2A04A00E3BA4B /* Categroy */ = {
+			isa = PBXGroup;
+			children = (
+				010B03921DF2A04A00E3BA4B /* UIColor+RGB.h */,
+				010B03931DF2A04A00E3BA4B /* UIColor+RGB.m */,
+			);
+			path = Categroy;
+			sourceTree = "<group>";
+		};
+		010B03941DF2A04A00E3BA4B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				010B03951DF2A04A00E3BA4B /* BaseViewController.h */,
+				010B03961DF2A04A00E3BA4B /* BaseViewController.m */,
+				010B03971DF2A04A00E3BA4B /* DetailViewController.h */,
+				010B03981DF2A04A00E3BA4B /* DetailViewController.m */,
+				010B03991DF2A04A00E3BA4B /* LogViewController.h */,
+				010B039A1DF2A04A00E3BA4B /* LogViewController.m */,
+				010B039B1DF2A04A00E3BA4B /* MainViewController.h */,
+				010B039C1DF2A04A00E3BA4B /* MainViewController.m */,
+				010B039D1DF2A04A00E3BA4B /* RetCodeViewController.h */,
+				010B039E1DF2A04A00E3BA4B /* RetCodeViewController.m */,
+				010B039F1DF2A04A00E3BA4B /* SettingViewController.h */,
+				010B03A01DF2A04A00E3BA4B /* SettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		010B03A11DF2A04A00E3BA4B /* File */ = {
+			isa = PBXGroup;
+			children = (
+				010B03A21DF2A04A00E3BA4B /* 147814529871993714_20161202.txt */,
+				010B03A31DF2A04A00E3BA4B /* log.txt */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		010B03A41DF2A04A00E3BA4B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				010B03A51DF2A04A00E3BA4B /* InfoLabel.h */,
+				010B03A61DF2A04A00E3BA4B /* InfoLabel.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		010B03B51DF2C16900E3BA4B /* File */ = {
+			isa = PBXGroup;
+			children = (
+				010B03B61DF2C16900E3BA4B /* CYGPSFileUploadRequest.h */,
+				010B03B71DF2C16900E3BA4B /* CYGPSFileUploadRequest.m */,
+				010B03B81DF2C16900E3BA4B /* CYIconUploadRequest.h */,
+				010B03B91DF2C16900E3BA4B /* CYIconUploadRequest.m */,
+				010B03BA1DF2C16900E3BA4B /* CYLogUploadRequest.h */,
+				010B03BB1DF2C16900E3BA4B /* CYLogUploadRequest.m */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		010B03BF1DF2C17700E3BA4B /* categroy */ = {
+			isa = PBXGroup;
+			children = (
+				010B03901DF2A04A00E3BA4B /* NSString+MEMITYPE.h */,
+				010B03911DF2A04A00E3BA4B /* NSString+MEMITYPE.m */,
+			);
+			path = categroy;
+			sourceTree = "<group>";
+		};
+		010B03C31DF2C5C700E3BA4B /* File */ = {
+			isa = PBXGroup;
+			children = (
+				010B03F41DF2D24D00E3BA4B /* CYGPSFileUploadResponce.h */,
+				010B03F51DF2D24D00E3BA4B /* CYGPSFileUploadResponce.m */,
+				010B03F71DF2D26C00E3BA4B /* CYIconUploadResponce.h */,
+				010B03F81DF2D26C00E3BA4B /* CYIconUploadResponce.m */,
+				010B03FA1DF2D28500E3BA4B /* CYLogUploadResponce.h */,
+				010B03FB1DF2D28500E3BA4B /* CYLogUploadResponce.m */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		016D0D111DEC4D64003BDC7B /* HttpProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				016D0D141DEC4D64003BDC7B /* CYHttpProtocolDef.h */,
+				016D0D181DEC4D64003BDC7B /* CYBasicRequest.h */,
+				016D0D191DEC4D64003BDC7B /* CYBasicRequest.m */,
+				016D0D201DEC4D64003BDC7B /* CYBasicResponce.h */,
+				016D0D211DEC4D64003BDC7B /* CYBasicResponce.m */,
+				016D0D121DEC4D64003BDC7B /* CYHTTPManager.h */,
+				016D0D131DEC4D64003BDC7B /* CYHTTPManager.m */,
+				010B03C01DF2C22E00E3BA4B /* CYHttpResponseSerializerWithData.h */,
+				010B03C11DF2C22E00E3BA4B /* CYHttpResponseSerializerWithData.m */,
+				010B03BF1DF2C17700E3BA4B /* categroy */,
+				016D0D171DEC4D64003BDC7B /* Request */,
+				016D0D1F1DEC4D64003BDC7B /* Responce */,
+			);
+			path = HttpProtocol;
+			sourceTree = "<group>";
+		};
+		016D0D171DEC4D64003BDC7B /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				016D0D331DED2AAC003BDC7B /* CYRequestHeader.h */,
+				016D0D1E1DEC4D64003BDC7B /* User */,
+				016D0D1B1DEC4D64003BDC7B /* Sport */,
+				010B03B51DF2C16900E3BA4B /* File */,
+				016D0D1A1DEC4D64003BDC7B /* Other */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		016D0D1A1DEC4D64003BDC7B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				01C4D5851DEEF42000AFAF49 /* CYFWUpdateRequest.h */,
+				01C4D5861DEEF42000AFAF49 /* CYFWUpdateRequest.m */,
+				010B03B21DF2A21F00E3BA4B /* CYWeatherRequest.h */,
+				010B03B31DF2A21F00E3BA4B /* CYWeatherRequest.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		016D0D1B1DEC4D64003BDC7B /* Sport */ = {
+			isa = PBXGroup;
+			children = (
+				01C4D53A1DEE9D1900AFAF49 /* Sleep */,
+				01C4D5391DEE9D1200AFAF49 /* Weight */,
+				01C4D5381DEE9D0100AFAF49 /* Heartrate */,
+				01C4D5371DEE9CF700AFAF49 /* GPS */,
+				01C4D5351DEE9CDB00AFAF49 /* Sports */,
+			);
+			path = Sport;
+			sourceTree = "<group>";
+		};
+		016D0D1E1DEC4D64003BDC7B /* User */ = {
+			isa = PBXGroup;
+			children = (
+				01C4D5671DEED07700AFAF49 /* CYLoginRequest.h */,
+				01C4D5681DEED07800AFAF49 /* CYLoginRequest.m */,
+				01C4D56A1DEED09800AFAF49 /* CYRegisterRequest.h */,
+				01C4D56B1DEED09800AFAF49 /* CYRegisterRequest.m */,
+				01C4D56D1DEED0BA00AFAF49 /* CYGetUserInfoRequest.h */,
+				01C4D56E1DEED0BA00AFAF49 /* CYGetUserInfoRequest.m */,
+				01C4D5701DEED0D400AFAF49 /* CYUpdateUserInfoRequest.h */,
+				01C4D5711DEED0D400AFAF49 /* CYUpdateUserInfoRequest.m */,
+				01C4D5731DEED0FC00AFAF49 /* CYGetPwdByEmailRequest.h */,
+				01C4D5741DEED0FC00AFAF49 /* CYGetPwdByEmailRequest.m */,
+				01C4D5761DEED10D00AFAF49 /* CYGetPwdRequest.h */,
+				01C4D5771DEED10D00AFAF49 /* CYGetPwdRequest.m */,
+				01C4D5791DEED12000AFAF49 /* CYChangePwdRequest.h */,
+				01C4D57A1DEED12000AFAF49 /* CYChangePwdRequest.m */,
+				01C4D57C1DEED14600AFAF49 /* CYCheckEmailExistRequest.h */,
+				01C4D57D1DEED14600AFAF49 /* CYCheckEmailExistRequest.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		016D0D1F1DEC4D64003BDC7B /* Responce */ = {
+			isa = PBXGroup;
+			children = (
+				016D0D341DED2AC0003BDC7B /* CYResponceHeader.h */,
+				016D0D261DEC4D64003BDC7B /* User */,
+				016D0D231DEC4D64003BDC7B /* Sport */,
+				010B03C31DF2C5C700E3BA4B /* File */,
+				016D0D221DEC4D64003BDC7B /* Other */,
+			);
+			path = Responce;
+			sourceTree = "<group>";
+		};
+		016D0D221DEC4D64003BDC7B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				010B03FD1DF2D2A200E3BA4B /* CYFWUpdateResponce.h */,
+				010B03FE1DF2D2A200E3BA4B /* CYFWUpdateResponce.m */,
+				010B04001DF2D2B000E3BA4B /* CYWeatherResponce.h */,
+				010B04011DF2D2B000E3BA4B /* CYWeatherResponce.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		016D0D231DEC4D64003BDC7B /* Sport */ = {
+			isa = PBXGroup;
+			children = (
+				01C4D5601DEE9F0E00AFAF49 /* Sleep */,
+				01C4D55F1DEE9F0200AFAF49 /* Weight */,
+				01C4D55E1DEE9EF900AFAF49 /* Heartrate */,
+				01C4D55D1DEE9EF200AFAF49 /* GPS */,
+				01C4D55C1DEE9EE700AFAF49 /* Sports */,
+			);
+			path = Sport;
+			sourceTree = "<group>";
+		};
+		016D0D261DEC4D64003BDC7B /* User */ = {
+			isa = PBXGroup;
+			children = (
+				010B03C41DF2CFEC00E3BA4B /* CYLoginResponce.h */,
+				010B03C51DF2CFEC00E3BA4B /* CYLoginResponce.m */,
+				010B03C71DF2D00300E3BA4B /* CYRegisterResponce.h */,
+				010B03C81DF2D00300E3BA4B /* CYRegisterResponce.m */,
+				010B03CA1DF2D09700E3BA4B /* CYGetUserInfoResponce.h */,
+				010B03CB1DF2D09700E3BA4B /* CYGetUserInfoResponce.m */,
+				010B03CD1DF2D0AF00E3BA4B /* CYUpdateUserInfoResponce.h */,
+				010B03CE1DF2D0AF00E3BA4B /* CYUpdateUserInfoResponce.m */,
+				010B03D01DF2D0CB00E3BA4B /* CYGetPwdByEmailResponce.h */,
+				010B03D11DF2D0CB00E3BA4B /* CYGetPwdByEmailResponce.m */,
+				010B03D31DF2D0E300E3BA4B /* CYGetPwdResponce.h */,
+				010B03D41DF2D0E300E3BA4B /* CYGetPwdResponce.m */,
+				010B03D61DF2D0F800E3BA4B /* CYChangePwdResponce.h */,
+				010B03D71DF2D0F800E3BA4B /* CYChangePwdResponce.m */,
+				010B03D91DF2D11200E3BA4B /* CYCheckEmailExistResponce.h */,
+				010B03DA1DF2D11200E3BA4B /* CYCheckEmailExistResponce.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		01C4D5351DEE9CDB00AFAF49 /* Sports */ = {
+			isa = PBXGroup;
+			children = (
+				01C4D5291DEE9C5800AFAF49 /* CYWalkingUploadRequest.h */,
+				01C4D52A1DEE9C5800AFAF49 /* CYWalkingUploadRequest.m */,
+				01C4D52C1DEE9C7B00AFAF49 /* CYWalkingDownloadRequest.h */,
+				01C4D52D1DEE9C7B00AFAF49 /* CYWalkingDownloadRequest.m */,
+				016D0D2D1DEC4E58003BDC7B /* CYSportsUploadRequest.h */,
+				016D0D2E1DEC4E58003BDC7B /* CYSportsUploadRequest.m */,
+				016D0D1C1DEC4D64003BDC7B /* CYSportsDownloadRequest.h */,
+				016D0D1D1DEC4D64003BDC7B /* CYSportsDownloadRequest.m */,
+			);
+			name = Sports;
+			sourceTree = "<group>";
+		};
+		01C4D5371DEE9CF700AFAF49 /* GPS */ = {
+			isa = PBXGroup;
+			children = (
+				01C4D52F1DEE9C9B00AFAF49 /* CYGpsUploadRequest.h */,
+				01C4D5301DEE9C9B00AFAF49 /* CYGpsUploadRequest.m */,
+				01C4D5321DEE9CBA00AFAF49 /* CYGpsDownloadRequest.h */,
+				01C4D5331DEE9CBA00AFAF49 /* CYGpsDownloadRequest.m */,
+			);
+			name = GPS;
+			sourceTree = "<group>";
+		};
+		01C4D5381DEE9D0100AFAF49 /* Heartrate */ = {
+			isa = PBXGroup;
+			children = (
+				01C4D5471DEE9DE400AFAF49 /* CYHeartrateUploadRequest.h */,
+				01C4D5481DEE9DE400AFAF49 /* CYHeartrateUploadRequest.m */,
+				01C4D54A1DEE9E1300AFAF49 /* CYHeartrateDownloadRequest.h */,
+				01C4D54B1DEE9E1300AFAF49 /* CYHeartrateDownloadRequest.m */,
+				01C4D54D1DEE9E3C00AFAF49 /* CYHrHourUploadRequest.h */,
+				01C4D54E1DEE9E3C00AFAF49 /* CYHrHourUploadRequest.m */,
+				01C4D5501DEE9E5300AFAF49 /* CYHrHourDownloadRequest.h */,
+				01C4D5511DEE9E5300AFAF49 /* CYHrHourDownloadRequest.m */,
+			);
+			name = Heartrate;
+			sourceTree = "<group>";
+		};
+		01C4D5391DEE9D1200AFAF49 /* Weight */ = {
+			isa = PBXGroup;
+			children = (
+				01C4D5411DEE9DB900AFAF49 /* CYWeightDownloadRequest.h */,
+				01C4D5421DEE9DB900AFAF49 /* CYWeightDownloadRequest.m */,
+				01C4D5441DEE9DCD00AFAF49 /* CYWeightUploadRequest.h */,
+				01C4D5451DEE9DCD00AFAF49 /* CYWeightUploadRequest.m */,
+			);
+			name = Weight;
+			sourceTree = "<group>";
+		};
+		01C4D53A1DEE9D1900AFAF49 /* Sleep */ = {
+			isa = PBXGroup;
+			children = (
+				01C4D53B1DEE9D8100AFAF49 /* CYSleepUploadRequest.h */,
+				01C4D53C1DEE9D8100AFAF49 /* CYSleepUploadRequest.m */,
+				01C4D53E1DEE9D9B00AFAF49 /* CYSleepDownloadRequest.h */,
+				01C4D53F1DEE9D9B00AFAF49 /* CYSleepDownloadRequest.m */,
+			);
+			name = Sleep;
+			sourceTree = "<group>";
+		};
+		01C4D55C1DEE9EE700AFAF49 /* Sports */ = {
+			isa = PBXGroup;
+			children = (
+				016D0D241DEC4D64003BDC7B /* CYSportsDownloadResponce.h */,
+				016D0D251DEC4D64003BDC7B /* CYSportsDownloadResponce.m */,
+				016D0D301DED2994003BDC7B /* CYSportsUploadResponce.h */,
+				016D0D311DED2994003BDC7B /* CYSportsUploadResponce.m */,
+				01C4D5561DEE9EBD00AFAF49 /* CYWalkingDownloadResponce.h */,
+				01C4D5571DEE9EBD00AFAF49 /* CYWalkingDownloadResponce.m */,
+				01C4D5591DEE9EDC00AFAF49 /* CYWalkingUploadResponce.h */,
+				01C4D55A1DEE9EDC00AFAF49 /* CYWalkingUploadResponce.m */,
+			);
+			name = Sports;
+			sourceTree = "<group>";
+		};
+		01C4D55D1DEE9EF200AFAF49 /* GPS */ = {
+			isa = PBXGroup;
+			children = (
+				01C4D5611DEE9F2F00AFAF49 /* CYGpsDownloadResponce.h */,
+				01C4D5621DEE9F2F00AFAF49 /* CYGpsDownloadResponce.m */,
+				01C4D5641DEE9F4000AFAF49 /* CYGpsUploadResponce.h */,
+				01C4D5651DEE9F4000AFAF49 /* CYGpsUploadResponce.m */,
+			);
+			name = GPS;
+			sourceTree = "<group>";
+		};
+		01C4D55E1DEE9EF900AFAF49 /* Heartrate */ = {
+			isa = PBXGroup;
+			children = (
+				010B03E21DF2D17B00E3BA4B /* CYHeartrateUploadResponce.h */,
+				010B03E31DF2D17B00E3BA4B /* CYHeartrateUploadResponce.m */,
+				010B03E51DF2D19300E3BA4B /* CYHeartrateDownloadResponce.h */,
+				010B03E61DF2D19300E3BA4B /* CYHeartrateDownloadResponce.m */,
+				010B03E81DF2D1AC00E3BA4B /* CYHrHourUploadResponce.h */,
+				010B03E91DF2D1AC00E3BA4B /* CYHrHourUploadResponce.m */,
+				010B03EB1DF2D1C000E3BA4B /* CYHrHourDownloadResponce.h */,
+				010B03EC1DF2D1C000E3BA4B /* CYHrHourDownloadResponce.m */,
+			);
+			name = Heartrate;
+			sourceTree = "<group>";
+		};
+		01C4D55F1DEE9F0200AFAF49 /* Weight */ = {
+			isa = PBXGroup;
+			children = (
+				010B03EE1DF2D1F100E3BA4B /* CYWeightDownloadResponce.h */,
+				010B03EF1DF2D1F100E3BA4B /* CYWeightDownloadResponce.m */,
+				010B03F11DF2D20700E3BA4B /* CYWeightUploadResponce.h */,
+				010B03F21DF2D20700E3BA4B /* CYWeightUploadResponce.m */,
+			);
+			name = Weight;
+			sourceTree = "<group>";
+		};
+		01C4D5601DEE9F0E00AFAF49 /* Sleep */ = {
+			isa = PBXGroup;
+			children = (
+				010B03DC1DF2D14700E3BA4B /* CYSleepUploadResponce.h */,
+				010B03DD1DF2D14700E3BA4B /* CYSleepUploadResponce.m */,
+				010B03DF1DF2D15C00E3BA4B /* CYSleepDownloadResponce.h */,
+				010B03E01DF2D15C00E3BA4B /* CYSleepDownloadResponce.m */,
+			);
+			name = Sleep;
+			sourceTree = "<group>";
+		};
+		01F66D901DEC06A8004D32C4 = {
+			isa = PBXGroup;
+			children = (
+				01F66D9B1DEC06A8004D32C4 /* CYRequestDemo */,
+				01F66D9A1DEC06A8004D32C4 /* Products */,
+				84859AC3A9A2EDF5B966C8EE /* Pods */,
+				55720F07A09A41F490010792 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		01F66D9A1DEC06A8004D32C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01F66D991DEC06A8004D32C4 /* CYRequestDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01F66D9B1DEC06A8004D32C4 /* CYRequestDemo */ = {
+			isa = PBXGroup;
+			children = (
+				016D0D111DEC4D64003BDC7B /* HttpProtocol */,
+				01C4D5221DEDAF8500AFAF49 /* CommonDefHeader.h */,
+				01F66D9F1DEC06A8004D32C4 /* AppDelegate.h */,
+				01F66DA01DEC06A8004D32C4 /* AppDelegate.m */,
+				010B038F1DF2A04A00E3BA4B /* Categroy */,
+				010B03941DF2A04A00E3BA4B /* Controller */,
+				010B03A11DF2A04A00E3BA4B /* File */,
+				010B03A41DF2A04A00E3BA4B /* View */,
+				01C4D5261DEE692A00AFAF49 /* NetWorkhandle.h */,
+				01C4D5271DEE692A00AFAF49 /* NetWorkhandle.m */,
+				01F66D9C1DEC06A8004D32C4 /* Supporting Files */,
+			);
+			path = CYRequestDemo;
+			sourceTree = "<group>";
+		};
+		01F66D9C1DEC06A8004D32C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01F66DA51DEC06A8004D32C4 /* Main.storyboard */,
+				01F66DA81DEC06A8004D32C4 /* Assets.xcassets */,
+				01F66DAA1DEC06A8004D32C4 /* LaunchScreen.storyboard */,
+				01F66DAD1DEC06A8004D32C4 /* Info.plist */,
+				01F66D9D1DEC06A8004D32C4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55720F07A09A41F490010792 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01C400F11DF11A35006A62B4 /* Photos.framework */,
+				83C4D900611918250DC834EE /* libPods-CYRequestDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84859AC3A9A2EDF5B966C8EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55B8CCA22B9CFCC36142D857 /* Pods-CYRequestDemo.debug.xcconfig */,
+				73B80F897FC74A4BEB0E1F33 /* Pods-CYRequestDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01F66D981DEC06A8004D32C4 /* CYRequestDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01F66DB01DEC06A8004D32C4 /* Build configuration list for PBXNativeTarget "CYRequestDemo" */;
+			buildPhases = (
+				10F1C5C11F08C568307930BC /* [CP] Check Pods Manifest.lock */,
+				01F66D951DEC06A8004D32C4 /* Sources */,
+				01F66D961DEC06A8004D32C4 /* Frameworks */,
+				01F66D971DEC06A8004D32C4 /* Resources */,
+				06AE062DC6AF5DF7E4504D1B /* [CP] Embed Pods Frameworks */,
+				12E3564E8A497B4BF2AFFB99 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CYRequestDemo;
+			productName = CYRequestDemo;
+			productReference = 01F66D991DEC06A8004D32C4 /* CYRequestDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01F66D911DEC06A8004D32C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = chenyuan;
+				TargetAttributes = {
+					01F66D981DEC06A8004D32C4 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 4CT2G4R74Q;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 01F66D941DEC06A8004D32C4 /* Build configuration list for PBXProject "CYRequestDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01F66D901DEC06A8004D32C4;
+			productRefGroup = 01F66D9A1DEC06A8004D32C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01F66D981DEC06A8004D32C4 /* CYRequestDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01F66D971DEC06A8004D32C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010B03B01DF2A04A00E3BA4B /* log.txt in Resources */,
+				010B03AF1DF2A04A00E3BA4B /* 147814529871993714_20161202.txt in Resources */,
+				01F66DAC1DEC06A8004D32C4 /* LaunchScreen.storyboard in Resources */,
+				01F66DA91DEC06A8004D32C4 /* Assets.xcassets in Resources */,
+				01F66DA71DEC06A8004D32C4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06AE062DC6AF5DF7E4504D1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYRequestDemo/Pods-CYRequestDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10F1C5C11F08C568307930BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		12E3564E8A497B4BF2AFFB99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYRequestDemo/Pods-CYRequestDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01F66D951DEC06A8004D32C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010B03CC1DF2D09700E3BA4B /* CYGetUserInfoResponce.m in Sources */,
+				010B03E11DF2D15C00E3BA4B /* CYSleepDownloadResponce.m in Sources */,
+				010B03D21DF2D0CB00E3BA4B /* CYGetPwdByEmailResponce.m in Sources */,
+				010B03CF1DF2D0AF00E3BA4B /* CYUpdateUserInfoResponce.m in Sources */,
+				01C4D5521DEE9E5300AFAF49 /* CYHrHourDownloadRequest.m in Sources */,
+				01C4D5871DEEF42000AFAF49 /* CYFWUpdateRequest.m in Sources */,
+				010B03DE1DF2D14700E3BA4B /* CYSleepUploadResponce.m in Sources */,
+				010B03BC1DF2C16900E3BA4B /* CYGPSFileUploadRequest.m in Sources */,
+				010B03B11DF2A04A00E3BA4B /* InfoLabel.m in Sources */,
+				010B03EA1DF2D1AC00E3BA4B /* CYHrHourUploadResponce.m in Sources */,
+				010B03FC1DF2D28500E3BA4B /* CYLogUploadResponce.m in Sources */,
+				01C4D54F1DEE9E3C00AFAF49 /* CYHrHourUploadRequest.m in Sources */,
+				010B03A81DF2A04A00E3BA4B /* UIColor+RGB.m in Sources */,
+				01C4D53D1DEE9D8100AFAF49 /* CYSleepUploadRequest.m in Sources */,
+				010B03C21DF2C22E00E3BA4B /* CYHttpResponseSerializerWithData.m in Sources */,
+				01C4D5281DEE692A00AFAF49 /* NetWorkhandle.m in Sources */,
+				010B03D81DF2D0F800E3BA4B /* CYChangePwdResponce.m in Sources */,
+				016D0D291DEC4D64003BDC7B /* CYBasicRequest.m in Sources */,
+				016D0D2F1DEC4E58003BDC7B /* CYSportsUploadRequest.m in Sources */,
+				01C4D5661DEE9F4000AFAF49 /* CYGpsUploadResponce.m in Sources */,
+				01C4D5401DEE9D9B00AFAF49 /* CYSleepDownloadRequest.m in Sources */,
+				010B03E41DF2D17C00E3BA4B /* CYHeartrateUploadResponce.m in Sources */,
+				010B03AA1DF2A04A00E3BA4B /* DetailViewController.m in Sources */,
+				010B03E71DF2D19300E3BA4B /* CYHeartrateDownloadResponce.m in Sources */,
+				016D0D2B1DEC4D64003BDC7B /* CYBasicResponce.m in Sources */,
+				010B03AE1DF2A04A00E3BA4B /* SettingViewController.m in Sources */,
+				01C4D5491DEE9DE400AFAF49 /* CYHeartrateUploadRequest.m in Sources */,
+				010B03AD1DF2A04A00E3BA4B /* RetCodeViewController.m in Sources */,
+				010B03AC1DF2A04A00E3BA4B /* MainViewController.m in Sources */,
+				010B03F31DF2D20700E3BA4B /* CYWeightUploadResponce.m in Sources */,
+				010B03A71DF2A04A00E3BA4B /* NSString+MEMITYPE.m in Sources */,
+				016D0D271DEC4D64003BDC7B /* CYHTTPManager.m in Sources */,
+				010B03C91DF2D00300E3BA4B /* CYRegisterResponce.m in Sources */,
+				010B03B41DF2A21F00E3BA4B /* CYWeatherRequest.m in Sources */,
+				01C4D5461DEE9DCD00AFAF49 /* CYWeightUploadRequest.m in Sources */,
+				016D0D321DED2994003BDC7B /* CYSportsUploadResponce.m in Sources */,
+				010B03C61DF2CFEC00E3BA4B /* CYLoginResponce.m in Sources */,
+				01C4D5721DEED0D400AFAF49 /* CYUpdateUserInfoRequest.m in Sources */,
+				016D0D2C1DEC4D64003BDC7B /* CYSportsDownloadResponce.m in Sources */,
+				010B03A91DF2A04A00E3BA4B /* BaseViewController.m in Sources */,
+				01C4D56C1DEED09800AFAF49 /* CYRegisterRequest.m in Sources */,
+				01F66DA11DEC06A8004D32C4 /* AppDelegate.m in Sources */,
+				010B03ED1DF2D1C000E3BA4B /* CYHrHourDownloadResponce.m in Sources */,
+				01C4D5431DEE9DB900AFAF49 /* CYWeightDownloadRequest.m in Sources */,
+				010B03DB1DF2D11200E3BA4B /* CYCheckEmailExistResponce.m in Sources */,
+				01C4D52B1DEE9C5800AFAF49 /* CYWalkingUploadRequest.m in Sources */,
+				01C4D5341DEE9CBA00AFAF49 /* CYGpsDownloadRequest.m in Sources */,
+				010B03F61DF2D24D00E3BA4B /* CYGPSFileUploadResponce.m in Sources */,
+				01C4D57B1DEED12000AFAF49 /* CYChangePwdRequest.m in Sources */,
+				010B04021DF2D2B000E3BA4B /* CYWeatherResponce.m in Sources */,
+				01C4D56F1DEED0BA00AFAF49 /* CYGetUserInfoRequest.m in Sources */,
+				016D0D2A1DEC4D64003BDC7B /* CYSportsDownloadRequest.m in Sources */,
+				010B03F01DF2D1F100E3BA4B /* CYWeightDownloadResponce.m in Sources */,
+				010B03BD1DF2C16900E3BA4B /* CYIconUploadRequest.m in Sources */,
+				01C4D5691DEED07800AFAF49 /* CYLoginRequest.m in Sources */,
+				010B03F91DF2D26D00E3BA4B /* CYIconUploadResponce.m in Sources */,
+				01F66D9E1DEC06A8004D32C4 /* main.m in Sources */,
+				01C4D52E1DEE9C7B00AFAF49 /* CYWalkingDownloadRequest.m in Sources */,
+				01C4D54C1DEE9E1300AFAF49 /* CYHeartrateDownloadRequest.m in Sources */,
+				01C4D5631DEE9F2F00AFAF49 /* CYGpsDownloadResponce.m in Sources */,
+				01C4D57E1DEED14600AFAF49 /* CYCheckEmailExistRequest.m in Sources */,
+				01C4D55B1DEE9EDC00AFAF49 /* CYWalkingUploadResponce.m in Sources */,
+				01C4D5781DEED10D00AFAF49 /* CYGetPwdRequest.m in Sources */,
+				01C4D5581DEE9EBD00AFAF49 /* CYWalkingDownloadResponce.m in Sources */,
+				010B03BE1DF2C16900E3BA4B /* CYLogUploadRequest.m in Sources */,
+				01C4D5311DEE9C9B00AFAF49 /* CYGpsUploadRequest.m in Sources */,
+				01C4D5751DEED0FC00AFAF49 /* CYGetPwdByEmailRequest.m in Sources */,
+				010B03AB1DF2A04A00E3BA4B /* LogViewController.m in Sources */,
+				010B03FF1DF2D2A200E3BA4B /* CYFWUpdateResponce.m in Sources */,
+				010B03D51DF2D0E300E3BA4B /* CYGetPwdResponce.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		01F66DA51DEC06A8004D32C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01F66DA61DEC06A8004D32C4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01F66DAA1DEC06A8004D32C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01F66DAB1DEC06A8004D32C4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01F66DAE1DEC06A8004D32C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01F66DAF1DEC06A8004D32C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01F66DB11DEC06A8004D32C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55B8CCA22B9CFCC36142D857 /* Pods-CYRequestDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4CT2G4R74Q;
+				INFOPLIST_FILE = CYRequestDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenyuan.CYRequestDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		01F66DB21DEC06A8004D32C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73B80F897FC74A4BEB0E1F33 /* Pods-CYRequestDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4CT2G4R74Q;
+				INFOPLIST_FILE = CYRequestDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenyuan.CYRequestDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01F66D941DEC06A8004D32C4 /* Build configuration list for PBXProject "CYRequestDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01F66DAE1DEC06A8004D32C4 /* Debug */,
+				01F66DAF1DEC06A8004D32C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01F66DB01DEC06A8004D32C4 /* Build configuration list for PBXNativeTarget "CYRequestDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01F66DB11DEC06A8004D32C4 /* Debug */,
+				01F66DB21DEC06A8004D32C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01F66D911DEC06A8004D32C4 /* Project object */;
+}

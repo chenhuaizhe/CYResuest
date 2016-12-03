@@ -1,0 +1,5 @@
+User:147814529871993714	Date:20161202	Device:ChenYuan's iPhone|iPhone
+OS:iOS|10.1.1
+2016-12-02 15:31:43 +0000: 多云 20°C pm2.5:57 $ 
+2016-12-02 15:31:59 +0000: -[HomePageViewController applicationDidEnterBackgroundNotice:] $ 
+2016-12-02 15:41:14 +0000: -[HomePageViewController applicationWillEnterForegroundNotice:] $ 
