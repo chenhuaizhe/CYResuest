@@ -16,7 +16,7 @@
 
 ### 登录
 
-```
+```objective-c
 - (void)sendLoginRequest {
 NSDictionary *dic = @{
 @"account": @"ccyy@qq.com",
@@ -32,7 +32,7 @@ CYLoginResponce *res = (CYLoginResponce *)responseObject;
 
 ### 上传数据
 
-```
+```objective-c
 - (void)sendSportsUploadRequest {
 NSArray *sports = @[
 @{
@@ -74,7 +74,7 @@ CYSportsUploadResponce *res = (CYSportsUploadResponce *)responseObject;
 
 ### 下载数据
 
-```
+```objective-c
 - (void)sendSportsDownloadRequest {
 
 CYSportsDownloadRequest *req = [CYSportsDownloadRequest requestWithDayStart:@"20161127" days:20];
@@ -92,7 +92,7 @@ NSLog(@"sportsArray=%@",sportsArray);
 
 ### 上传头像
 
-```
+```objective-c
 - (void)sendIconUploadRequest {
 UIImage *icon = [UIImage imageNamed:@"ccyy.jpg"];
 CYBasicRequest *r = [[CYBasicRequest alloc]init];
@@ -109,7 +109,7 @@ CYIconUploadResponce *res = (CYIconUploadResponce *)responseObject;
 
 ### 上传文件
 
-```
+```objective-c
 - (void)sendLogFileUploadRequest {
 CYBasicRequest *r = [[CYBasicRequest alloc]init];
 NSString *path = [[NSBundle mainBundle]pathForResource:@"log.txt" ofType:nil];
